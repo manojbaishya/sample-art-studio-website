@@ -1,0 +1,22 @@
+#app {
+    font-family: Avenir,
+        Helvetica,
+        Arial,
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    --sidebar-bg-color: #2f855a;
+    --sidebar-item-hover: #38a169;
+    --sidebar-item-active: #276749;
+}
+
+body.dark {
+    --bg-color: #000;
+    --bg-secondary-color: #131316;
+    --font-color: #f5f5f5;
+    --color-grey: #ccc;
+    --color-darkGrey: #777;
+}

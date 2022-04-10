@@ -1,16 +1,19 @@
 <script setup>
-import NavBar from './components/NavBar.vue'
-import { RouterView } from 'vue-router'
+import NavBar from "./components/NavBar.vue";
+import { RouterView } from "vue-router";
+
+import { SidebarState } from "@/stores/sidebar";
+
+const sidebar_state = SidebarState();
 </script>
 
 <template>
-    <div class="relative flex min-h-screen antialiased">
+    <div>
         <NavBar />
-        <RouterView />
+        <RouterView :style="{ 'margin-left': sidebar_state.sidebarWidth }" />
     </div>
 </template>
 
 <style>
-@import "@/styles/base.css";
-@import "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css";
+@import "@/styles/app.css";
 </style>
