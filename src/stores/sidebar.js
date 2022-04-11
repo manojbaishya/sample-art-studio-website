@@ -8,7 +8,7 @@ export const SidebarState = defineStore({
     getters: {
         sidebarWidth(state) {
             const SIDEBAR_WIDTH = 180
-            const SIDEBAR_WIDTH_COLLAPSED = 38
+            const SIDEBAR_WIDTH_COLLAPSED = 90
 
             return `${state.collapsed ? SIDEBAR_WIDTH_COLLAPSED : SIDEBAR_WIDTH}px`
         }

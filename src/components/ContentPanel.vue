@@ -5,5 +5,11 @@ defineProps({
 </script>
 
 <template>
-    <div>{{ text }}</div>
+    <div id="content">{{ text }}</div>
 </template>
+
+<style scoped>
+#content {
+    text-align: center;
+}
+</style>

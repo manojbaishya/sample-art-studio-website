@@ -1,38 +1,48 @@
 <script setup>
-
 import NavBarLink from "./NavBarLink.vue";
-import { SidebarState } from "@/stores/sidebar"
+import { SidebarState } from "@/stores/sidebar";
+import { DarkMode } from "@/stores/darkmode";
 
-const sidebar_state = SidebarState()
+const sidebar_state = SidebarState();
+const darkmode = DarkMode();
 </script>
 
 <template>
     <div class="sidebar" :style="{ width: sidebar_state.sidebarWidth }">
-        <h1>
-            <span v-if="sidebar_state.collapsed">
-                <div>V</div>
-                <div>S</div>
+        <div class="brand">
+            <h1>
+                <span v-if="sidebar_state.collapsed">
+                    <img src="@/assets/img/logo.png" alt="brand" class="logo">
+                </span>
+                <span v-else>
+                    <img src="@/assets/img/logo-d.svg" alt="brand">
+                </span>
+            </h1>
+        </div>
+
+        <NavBarLink to="/" src="https://icongr.am/fontawesome/home.svg?color=ffffff">Home</NavBarLink>
+        <NavBarLink to="/projects" src="https://icongr.am/fontawesome/picture-o.svg?color=ffffff">Projects
+        </NavBarLink>
+        <NavBarLink to="/illustrations" src="https://icongr.am/material/palette.svg?color=ffffff">Illustrations
+        </NavBarLink>
+        <NavBarLink to="/about" src="https://icongr.am/material/account.svg?color=ffffff">About</NavBarLink>
+        <NavBarLink to="/contact" src="https://icongr.am/material/cellphone-iphone.svg?color=ffffff">Contact
+        </NavBarLink>
+
+        <div class="buttons-panel">
+            <span class="darkmode-switch buttons-panel-button" @click="darkmode.toggle">
+                <img src="@/assets/img/theme-switch-dark.svg">
             </span>
-            <span v-else>Vue Sidebar</span>
-        </h1>
-
-        <NavBarLink to="/" src="https://icongr.am/fontawesome/home.svg?size=64&color=ffffff">Home</NavBarLink>
-        <NavBarLink to="/projects" src="https://icongr.am/fontawesome/picture-o.svg?size=64&color=ffffff">Projects
-        </NavBarLink>
-        <NavBarLink to="/illustrations" src="https://icongr.am/material/palette.svg?size=60&color=ffffff">Illustrations
-        </NavBarLink>
-        <NavBarLink to="/about" src="https://icongr.am/material/account.svg?size=60&color=ffffff">About</NavBarLink>
-        <NavBarLink to="/contact" src="https://icongr.am/material/cellphone-iphone.svg?size=60&color=ffffff">Contact
-        </NavBarLink>
-
-        <span class="collapse-icon" :class="{ 'rotate-180': sidebar_state.collapsed }" @click="sidebar_state.toggle">
-            <img src="https://icongr.am/material/chevron-double-left.svg?size=30&color=ffffff" alt="collapse-sidebar" />
-        </span>   </div>
+            <span class="collapse-icon buttons-panel-button" :class="{ 'rotate-180': sidebar_state.collapsed }"
+                @click="sidebar_state.toggle">
+                <img src="@/assets/img/chevron-double-left-dark.svg" alt="collapse-sidebar" />
+            </span>
+        </div>   </div>
 </template>
 
 <style scoped>
 .sidebar {
-    color: white;
+    color: var(--sidebar-color);
     background-color: var(--sidebar-bg-color);
 
     float: left;
@@ -47,20 +57,58 @@ const sidebar_state = SidebarState()
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    padding-bottom: 8em;
 }
 
 .sidebar h1 {
     height: 2.5em;
 }
 
-.collapse-icon {
+.logo {
+    width: 75px;
+}
+
+.brand {
+    position: relative;
+    top: -3em
+}
+
+.buttons-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     position: absolute;
-    bottom: 0;
-    padding: 0.75em;
+    bottom: 0.5em;
+    left: 1.3em;
+}
+
+.buttons-panel-button {
+    max-width: 85%;
+    height: auto;
+
+    display: flex;
+    padding: 0.5em;
 
     color: rgba(255, 255, 255, 0.7);
+}
+
+.collapse-icon {
 
     transition: 0.2s linear;
+}
+
+.collapse-icon:hover {
+    background-color: var(--sidebar-item-hover);
+    border-radius: 5px;
+}
+
+.darkmode-switch {}
+
+.darkmode-switch:hover {
+    background-color: var(--sidebar-item-hover);
+    border-radius: 5px;
 }
 
 .rotate-180 {
