@@ -12,10 +12,10 @@ const darkmode = DarkMode();
         <div class="brand">
             <h1>
                 <span v-if="sidebar_state.collapsed">
-                    <img src="@/assets/img/logo.png" alt="brand" class="logo">
+                    <img src="@/assets/img/logo/logo.png" alt="brand" class="logo">
                 </span>
                 <span v-else>
-                    <img src="@/assets/img/logo-d.svg" alt="brand">
+                    <img src="@/assets/img/logo/logo-d.svg" alt="brand">
                 </span>
             </h1>
         </div>
@@ -31,13 +31,14 @@ const darkmode = DarkMode();
 
         <div class="buttons-panel">
             <span class="darkmode-switch buttons-panel-button" @click="darkmode.toggle">
-                <img src="@/assets/img/theme-switch-dark.svg">
+                <img src="@/assets/icons/general/theme-switch-dark.svg">
             </span>
             <span class="collapse-icon buttons-panel-button" :class="{ 'rotate-180': sidebar_state.collapsed }"
                 @click="sidebar_state.toggle">
-                <img src="@/assets/img/chevron-double-left-dark.svg" alt="collapse-sidebar" />
+                <img src="@/assets/icons/general/chevron-double-left-dark.svg" alt="collapse-sidebar" />
             </span>
-        </div>   </div>
+        </div>
+    </div>
 </template>
 
 <style scoped>

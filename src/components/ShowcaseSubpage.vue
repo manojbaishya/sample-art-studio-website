@@ -3,14 +3,15 @@ import HeaderBar from "@/components/HeaderBar.vue";
 import ContentPanel from "@/components/ContentPanel.vue";
 
 defineProps({
-    title: String,
-    content: String,
+    title: String
 });
 </script>
 
 <template>
     <div>
         <HeaderBar :title="title" />
-        <ContentPanel :text="content" />
+        <ContentPanel>
+            <slot></slot>
+        </ContentPanel>
     </div>
 </template>
