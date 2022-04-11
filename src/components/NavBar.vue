@@ -31,11 +31,11 @@ const darkmode = DarkMode();
 
         <div class="buttons-panel">
             <span class="darkmode-switch buttons-panel-button" @click="darkmode.toggle">
-                <img src="@/assets/img/theme-switch-dark.svg">
+                <img src="@/assets/icons/general/theme-switch-dark.svg">
             </span>
             <span class="collapse-icon buttons-panel-button" :class="{ 'rotate-180': sidebar_state.collapsed }"
                 @click="sidebar_state.toggle">
-                <img src="@/assets/img/chevron-double-left-dark.svg" alt="collapse-sidebar" />
+                <img src="@/assets/icons/general/chevron-double-left-dark.svg" alt="collapse-sidebar" />
             </span>
         </div>   </div>
 </template>
