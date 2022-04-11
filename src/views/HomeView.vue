@@ -1,11 +1,16 @@
 <script setup>
 import ShowcaseSubpage from "../components/ShowcaseSubpage.vue";
+import Carousel from "../components/Carousel.vue";
 
 var heading = "Home Page";
-var content_text = `
-This is the Home Page.`;
+
 </script>
 
 <template>
-    <ShowcaseSubpage :title="heading" :content="content_text" />
+    <ShowcaseSubpage>
+        <Carousel />
+    </ShowcaseSubpage>
 </template>
+
+<style scoped>
+</style>

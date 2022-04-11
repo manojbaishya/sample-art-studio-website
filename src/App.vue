@@ -15,5 +15,6 @@ const sidebar_state = SidebarState();
 </template>
 
 <style>
+@import "chota/dist/chota.min.css";
 @import "@/styles/app.css";
 </style>

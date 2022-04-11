@@ -12,10 +12,10 @@ const darkmode = DarkMode();
         <div class="brand">
             <h1>
                 <span v-if="sidebar_state.collapsed">
-                    <img src="@/assets/img/logo.png" alt="brand" class="logo">
+                    <img src="@/assets/img/logo/logo.png" alt="brand" class="logo">
                 </span>
                 <span v-else>
-                    <img src="@/assets/img/logo-d.svg" alt="brand">
+                    <img src="@/assets/img/logo/logo-d.svg" alt="brand">
                 </span>
             </h1>
         </div>
@@ -37,7 +37,8 @@ const darkmode = DarkMode();
                 @click="sidebar_state.toggle">
                 <img src="@/assets/icons/general/chevron-double-left-dark.svg" alt="collapse-sidebar" />
             </span>
-        </div>   </div>
+        </div>
+    </div>
 </template>
 
 <style scoped>

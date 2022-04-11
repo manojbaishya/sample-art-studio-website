@@ -5,15 +5,20 @@ defineProps({
 </script>
 
 <template>
-    <div>
+    <div id="header">
         <h1>{{ title }}</h1>
     </div>
 </template>
 
 <style scoped>
-h1 {
+#header {
     text-align: center;
-    font-family: Lato;
-    font-style: italic;
+    font-weight: medium;
+    font-stretch: condensed;
+
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 </style>
