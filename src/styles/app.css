@@ -1,16 +1,17 @@
-#app {
-    font-family: 'Futura LT',
-        sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
 :root {
 
     --sidebar-color: white;
     --sidebar-bg-color: #323031;
     --sidebar-item-hover: #585B59;
     --sidebar-item-active: #56427A;
+    --app-font-family: 'Futura LT'
+}
+
+#app {
+    font-family: var(--app-font-family),
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body.dark {

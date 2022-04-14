@@ -7,7 +7,7 @@ var heading = "Home Page";
 </script>
 
 <template>
-    <ShowcaseSubpage>
+    <ShowcaseSubpage :header=false>
         <Carousel />
     </ShowcaseSubpage>
 </template>

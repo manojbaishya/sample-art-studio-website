@@ -8,7 +8,7 @@ const sidebar_state = SidebarState();
 </script>
 
 <template>
-    <div>
+    <div id="app-container">
         <NavBar />
         <RouterView :style="{ 'margin-left': sidebar_state.sidebarWidth }" />
     </div>
