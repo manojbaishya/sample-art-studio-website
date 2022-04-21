@@ -1,28 +1,27 @@
-:root {
-
-    --sidebar-color: white;
-    --sidebar-bg-color: #323031;
-    --sidebar-item-hover: #585B59;
-    --sidebar-item-active: #56427A;
-    --app-font-family: 'Futura LT'
+body {
+    overscroll-behavior-y: none;
 }
 
 #app {
-    font-family: var(--app-font-family),
-        sans-serif;
+    font-family: Futura-Normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-body.dark {
-    --bg-color: #000;
-    --bg-secondary-color: #131316;
-    --font-color: #f5f5f5;
-    --color-grey: #ccc;
-    --color-darkGrey: #777;
+h1 {
+    font-family: Futura-Bold;
+}
 
-    --sidebar-color: var(--color-grey);
-    --sidebar-bg-color: var(--bg-color);
-    --sidebar-item-hover: var(--bg-secondary-color);
-    --sidebar-item-active: #56427A;
+@font-face {
+    font-family: Futura-Normal;
+    src: url('../assets/fonts/FuturaLT.woff') format("WOFF");
+    font-weight: normal;
+    font-display: fallback
+}
+
+@font-face {
+    font-family: Futura-Bold;
+    src: url('../assets/fonts/FuturaLT-Bold.woff') format("WOFF");
+    font-weight: normal;
+    font-display: fallback
 }

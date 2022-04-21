@@ -12,7 +12,7 @@ defineProps({
 </script>
 
 <template>
-    <div>
+    <div id="subpage-container">
         <HeaderBar :title="title" v-show="header" />
         <ContentPanel>
             <slot></slot>
