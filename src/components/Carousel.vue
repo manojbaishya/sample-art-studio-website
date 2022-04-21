@@ -15,19 +15,17 @@ let slider_options = {
 
 <template>
 
-    <div id="carousel-container">
-        <Splide ref="splide" :options="slider_options" aria-label="Vue Splide Example">
-            <SplideSlide>
-                <img src="@/assets/img/slider/slider-1.jpg" alt="Sample 1" class="slider-image">
-            </SplideSlide>
-            <SplideSlide>
-                <img src="@/assets/img/slider/slider-2.jpg" alt="Sample 2" class="slider-image">
-            </SplideSlide>
-            <SplideSlide>
-                <img src="@/assets/img/slider/slider-3.jpg" alt="Sample 3" class="slider-image">
-            </SplideSlide>
-        </Splide>
-    </div>
+    <Splide ref="splide" :options="slider_options" aria-label="Vue Splide Example">
+        <SplideSlide>
+            <img src="@/assets/img/slider/slider-1.jpg" alt="Sample 1" class="slider-image">
+        </SplideSlide>
+        <SplideSlide>
+            <img src="@/assets/img/slider/slider-2.jpg" alt="Sample 2" class="slider-image">
+        </SplideSlide>
+        <SplideSlide>
+            <img src="@/assets/img/slider/slider-3.jpg" alt="Sample 3" class="slider-image">
+        </SplideSlide>
+    </Splide>
 </template>
 
 <style>
