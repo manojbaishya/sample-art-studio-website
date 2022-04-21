@@ -1,5 +1,5 @@
 <script setup>
-import NavBar from "./components/NavBar.vue";
+import Sidebar from "./components/Sidebar.vue"
 import { RouterView } from "vue-router";
 
 import { SidebarState } from "@/stores/sidebar";
@@ -9,7 +9,7 @@ const sidebar_state = SidebarState();
 
 <template>
     <div id="app-container">
-        <NavBar />
+        <Sidebar />
         <RouterView :style="{ 'margin-left': sidebar_state.sidebarWidth }" />
     </div>
 </template>
