@@ -2,7 +2,7 @@
 
 import { onBeforeMount } from 'vue';
 
-import ShowcaseSubpage from "../components/ShowcaseSubpage.vue";
+import Subpage from "../components/Subpage.vue";
 
 let heading = "The Eye of the Karma";
 
@@ -26,7 +26,7 @@ onBeforeMount(() => {
 </script>
 
 <template>
-    <ShowcaseSubpage :title="heading">
+    <Subpage :title="heading">
 
         <div id="gallery-container">
             <div id="gallery-text">
@@ -41,7 +41,7 @@ onBeforeMount(() => {
             </div>
         </div>
 
-    </ShowcaseSubpage>
+    </Subpage>
 </template>
 
 <style scoped>

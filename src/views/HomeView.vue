@@ -1,13 +1,13 @@
 <script setup>
-import ShowcaseSubpage from "../components/ShowcaseSubpage.vue";
+import Subpage from "../components/Subpage.vue";
 import Carousel from "../components/Carousel.vue";
 
 </script>
 
 <template>
-    <ShowcaseSubpage :header=false>
+    <Subpage :header=false>
         <Carousel />
-    </ShowcaseSubpage>
+    </Subpage>
 </template>
 
 <style scoped>
