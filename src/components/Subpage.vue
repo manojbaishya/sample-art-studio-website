@@ -1,7 +1,7 @@
 <script setup>
 import { ref, computed, watch, onMounted, onUnmounted } from 'vue';
-import HeaderBar from "@/components/HeaderBar.vue";
-import ContentPanel from "@/components/ContentPanel.vue";
+import Header from "@/components/HeaderBar.vue";
+import Content from "@/components/ContentPanel.vue";
 
 import { Sidebar } from '@/stores/sidebar.js'
 
@@ -23,10 +23,10 @@ const sidebar = Sidebar();
 
 <template>
     <div id="subpage-container">
-        <HeaderBar :title="title" v-show="header" />
-        <ContentPanel :adaptive-content-width=isGeneralPage>
+        <Header :title="title" v-show="header" />
+        <Content :adaptive-content-width=isGeneralPage>
             <slot></slot>
-        </ContentPanel>
+        </Content>
     </div>
 </template>
 
