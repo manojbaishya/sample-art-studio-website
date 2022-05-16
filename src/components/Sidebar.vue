@@ -1,11 +1,16 @@
 <script setup>
 import { computed, ref, reactive, onMounted, watch, onUnmounted } from 'vue'
 import { SidebarMenu } from 'vue-sidebar-menu'
+import { DarkMode } from "@/stores/darkmode";
 import 'vue-sidebar-menu/dist/vue-sidebar-menu.css'
 import '@fortawesome/fontawesome-free/css/all.css'
 
 import { Sidebar } from '@/stores/sidebar.js'
+
 const sidebarState = Sidebar();
+
+// TODO: Need to fix Dark Mode
+const darkmode = DarkMode();
 
 let windowWidth = ref(window.innerWidth);
 
@@ -104,6 +109,9 @@ function handleFocusOut() {
                 <a href="/"><img src="@/assets/img/logo/logo-1.png" class="d-block org-logo"></a>
             </template>
         </SidebarMenu>
+        <span class="darkmode-switch buttons-panel-button" @click="darkmode.toggle">
+                <img src="@/assets/icons/general/theme-switch-light.svg">
+            </span>
         <button v-show="sidebarState.width === '0px' ? true : false" id="sidebar-toggle"
             class="button clear icon-only pull-left" type="button" @click="toggleSidebar">
             <i class="fas fa-bars"></i>
@@ -112,6 +120,13 @@ function handleFocusOut() {
 </template>
 
 <style lang="scss">
+.darkmode-switch {}
+
+.darkmode-switch:hover {
+    background-color: var(--sidebar-item-hover);
+    border-radius: 5px;
+}
+
 .v-sidebar-menu.vsm_white-theme {
     background-color: #f1eee8;
 }
