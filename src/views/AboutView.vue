@@ -1,7 +1,7 @@
 <script setup>
-import ShowcaseSubpage from "../components/ShowcaseSubpage.vue";
+import Subpage from "../components/Subpage.vue";
 </script>
 
 <template>
-    <ShowcaseSubpage title="About Page"> This is the About Page. </ShowcaseSubpage>
+    <Subpage title="About Page"> This is the About Page. </Subpage>
 </template>

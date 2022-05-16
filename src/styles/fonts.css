@@ -1,0 +1,20 @@
+@font-face {
+    font-family: Futura-Normal;
+    src: url('../assets/fonts/FuturaLT.woff') format("WOFF");
+    font-weight: normal;
+    font-display: fallback
+}
+
+@font-face {
+    font-family: Futura-Bold;
+    src: url('../assets/fonts/FuturaLT-Bold.woff') format("WOFF");
+    font-weight: normal;
+    font-display: fallback
+}
+
+@font-face {
+    font-family: Cmon-Near;
+    src: url('../assets/fonts/cmonnear.woff') format("WOFF");
+    font-weight: normal;
+    font-display: fallback
+}

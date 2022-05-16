@@ -1,8 +1,11 @@
 <script setup>
+defineProps({
+    adaptiveContentWidth: Boolean
+})
 </script>
 
 <template>
-    <div id="content">
+    <div id="content" :class="{ contentwidth: adaptiveContentWidth }">
         <slot></slot>
     </div>
 </template>
@@ -13,6 +16,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1em;
+    padding-top: 1em;
+}
+
+.contentwidth {
+    /* max-width: 80% */
 }
 </style>

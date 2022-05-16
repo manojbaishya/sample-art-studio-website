@@ -22,7 +22,7 @@ const isActive = computed(() => route.path === props.to);
                 <slot />
             </span>
         </transition>
-        </RouterLink>
+    </RouterLink>
 </template>
 
 <style scoped>

@@ -1,27 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+body {
+    overscroll-behavior-x: none;
+    overscroll-behavior-y: none;
+}
+
 #app {
-    font-family: 'Futura LT',
-        sans-serif;
+    /* font-family: Futura-Normal; */
+    font-family: 'Gloria Hallelujah', cursive;
+    font-weight: 800;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-:root {
-
-    --sidebar-color: white;
-    --sidebar-bg-color: #323031;
-    --sidebar-item-hover: #585B59;
-    --sidebar-item-active: #56427A;
-}
-
-body.dark {
-    --bg-color: #000;
-    --bg-secondary-color: #131316;
-    --font-color: #f5f5f5;
-    --color-grey: #ccc;
-    --color-darkGrey: #777;
-
-    --sidebar-color: var(--color-grey);
-    --sidebar-bg-color: var(--bg-color);
-    --sidebar-item-hover: var(--bg-secondary-color);
-    --sidebar-item-active: #56427A;
+h1 {
+    font-family: Cmon-Near;
 }

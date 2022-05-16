@@ -1,21 +1,31 @@
 import { defineStore } from 'pinia'
 
-export const SidebarState = defineStore({
-    id: 'sidebar',
+let defaults = {
+    shown: {
+        width: "180px",
+        value: "shown"
+    },
+    hidden: {
+        width: "0px",
+        value: "hidden"
+    }
+}
+
+export const Sidebar = defineStore("sidebar", {
     state: () => ({
-        collapsed: false
+        viewport: "",
+        width: ""
     }),
     getters: {
-        sidebarWidth(state) {
-            const SIDEBAR_WIDTH = 180
-            const SIDEBAR_WIDTH_COLLAPSED = 90
-
-            return `${state.collapsed ? SIDEBAR_WIDTH_COLLAPSED : SIDEBAR_WIDTH}px`
-        }
     },
     actions: {
-        toggle() {
-            this.collapsed = !this.collapsed
+        setAsShown() {
+            this.viewport = defaults.shown.value;
+            this.width = defaults.shown.width;
+        },
+        setAsHidden() {
+            this.viewport = defaults.hidden.value;
+            this.width = defaults.hidden.width;
         }
     }
 })

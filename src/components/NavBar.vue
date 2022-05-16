@@ -8,7 +8,7 @@ const darkmode = DarkMode();
 </script>
 
 <template>
-    <div class="sidebar" :style="{ width: sidebar_state.sidebarWidth }">
+    <div id="sidebar" :style="{ width: sidebar_state.sidebarWidth }">
         <div class="brand">
             <h1>
                 <span v-if="sidebar_state.collapsed">
@@ -42,7 +42,7 @@ const darkmode = DarkMode();
 </template>
 
 <style scoped>
-.sidebar {
+#sidebar {
     color: var(--sidebar-color);
     background-color: var(--sidebar-bg-color);
 
@@ -52,17 +52,26 @@ const darkmode = DarkMode();
     top: 0;
     left: 0;
     bottom: 0;
-    padding: 0.5em;
+    padding: 1rem;
 
     transition: 0.3s ease;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-height: 100vh;
     padding-bottom: 8em;
+
+    overflow: hidden;
+
+    @media screen and (max-width: 768px) {
+        float: none;
+        position: relative;
+        z-index: 99;
+    }
 }
 
-.sidebar h1 {
+#sidebar h1 {
     height: 2.5em;
 }
 
