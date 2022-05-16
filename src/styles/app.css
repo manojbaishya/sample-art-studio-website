@@ -1,28 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
 body {
     overscroll-behavior-x: none;
     overscroll-behavior-y: none;
 }
 
 #app {
-    font-family: Futura-Normal;
+    /* font-family: Futura-Normal; */
+    font-family: 'Gloria Hallelujah', cursive;
+    font-weight: 800;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
-    font-family: Futura-Bold;
-}
-
-@font-face {
-    font-family: Futura-Normal;
-    src: url('../assets/fonts/FuturaLT.woff') format("WOFF");
-    font-weight: normal;
-    font-display: fallback
-}
-
-@font-face {
-    font-family: Futura-Bold;
-    src: url('../assets/fonts/FuturaLT-Bold.woff') format("WOFF");
-    font-weight: normal;
-    font-display: fallback
+    font-family: Cmon-Near;
 }

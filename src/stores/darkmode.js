@@ -1,7 +1,6 @@
 import { defineStore } from 'pinia'
 
-export const DarkMode = defineStore({
-    id: 'darkmode',
+export const DarkMode = defineStore("darkmode", {
     state: () => ({
         enabled: false
     }),
