@@ -3,6 +3,7 @@
 import { onBeforeMount } from 'vue';
 
 import Subpage from "../components/Subpage.vue";
+import GridPattern from "../components/GridPattern.vue";
 
 let heading = "Art Studio on the Streets";
 
@@ -26,6 +27,7 @@ onBeforeMount(() => {
 </script>
 
 <template>
+    <GridPattern />
     <Subpage :title="heading">
 
         <div id="gallery-container">
