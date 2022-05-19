@@ -14,7 +14,7 @@
         "@splidejs/vue-splide": "^0.6.3",
         "chota": "^0.8.0",
         "pinia": "^2.0.11",
-        "vue": "^3.2.25",
+        "vue": "^3.2.34",
         "vue-router": "^4.0.12",
         "vue-sidebar-menu": "^5.2.2"
     },
