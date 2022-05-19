@@ -110,8 +110,8 @@ function handleFocusOut() {
             </template>
         </SidebarMenu>
         <span class="darkmode-switch buttons-panel-button" @click="darkmode.toggle">
-                <img src="@/assets/icons/general/theme-switch-light.svg">
-            </span>
+            <img src="@/assets/icons/general/theme-switch-light.svg">
+        </span>
         <button v-show="sidebarState.width === '0px' ? true : false" id="sidebar-toggle"
             class="button clear icon-only pull-left" type="button" @click="toggleSidebar">
             <i class="fas fa-bars"></i>
@@ -120,11 +120,13 @@ function handleFocusOut() {
 </template>
 
 <style lang="scss">
-.darkmode-switch {}
+.darkmode-switch {
+    position: absolute;
+    right: 0%;
+}
 
 .darkmode-switch:hover {
-    background-color: var(--sidebar-item-hover);
-    border-radius: 5px;
+    background-color: #f1eee8;
 }
 
 .v-sidebar-menu.vsm_white-theme {
