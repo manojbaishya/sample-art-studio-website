@@ -21,4 +21,8 @@ defineProps({
     align-content: center;
     justify-content: center;
 }
+
+#header h1 {
+    margin: 0%;
+}
 </style>

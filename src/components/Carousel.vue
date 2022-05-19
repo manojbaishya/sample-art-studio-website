@@ -9,7 +9,7 @@ let slider_options = {
     rewind: true,
     type: "fade",
     role: "region",
-    width: "80%",
+    width: "75%",
 }
 </script>
 
