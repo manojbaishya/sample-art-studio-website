@@ -12,9 +12,4 @@
     font-display: fallback
 }
 
-@font-face {
-    font-family: Cmon-Near;
-    src: url('../assets/fonts/cmonnear.woff') format("WOFF");
-    font-weight: normal;
-    font-display: fallback
-}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');

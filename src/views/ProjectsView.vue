@@ -5,7 +5,7 @@ import { onBeforeMount } from 'vue';
 import Subpage from "../components/Subpage.vue";
 import GridPattern from "../components/GridPattern.vue";
 
-let heading = "Art Studio on the Streets";
+let heading = "ART STUDIO ON THE STREETS";
 
 let text = `Voluptate quis amet aliqua minim cupidatat. Lorem eiusmod cupidatat ea. Aute sunt reprehenderit qui. Amet duis mollit tempor non pariatur reprehenderit anim incididunt ea sit culpa. Pariatur sit do culpa nisi aute mollit sint nisi dolore ad commodo consectetur culpa. Velit enim et deserunt sint sint non commodo qui laborum irure ad tempor mollit aliquip cillum. Reprehenderit amet incididunt aliqua irure labore aliqua reprehenderit esse tempor minim irure sunt laborum adipisicing irure.
 Nulla proident duis culpa eu cupidatat sunt irure non qui culpa. Mollit laboris magna in in deserunt. Reprehenderit reprehenderit incididunt commodo. Officia adipisicing velit ea cupidatat voluptate irure excepteur.
@@ -27,7 +27,7 @@ onBeforeMount(() => {
 </script>
 
 <template>
-    <GridPattern />
+    <!-- <GridPattern /> -->
     <Subpage :title="heading">
 
         <div id="gallery-container">
