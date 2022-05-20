@@ -9,7 +9,7 @@ let slider_options = {
     rewind: true,
     type: "fade",
     role: "region",
-    width: "75%",
+    width: "80%",
 }
 </script>
 
@@ -26,6 +26,7 @@ let slider_options = {
             <img src="@/assets/img/slider/slider-3.jpg" alt="Sample 3" class="slider-image">
         </SplideSlide>
     </Splide>
+
 </template>
 
 <style>
