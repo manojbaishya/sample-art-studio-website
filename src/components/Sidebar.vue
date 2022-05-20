@@ -60,6 +60,11 @@ let sidebar = {
             href: '/contact',
             title: 'Contact',
             icon: 'fas fa-envelope'
+        },
+        {
+            href: '/test',
+            title: 'Scratchpad',
+            icon: 'fas fa-vials'
         }
     ], props: {
         collapsed: false,
