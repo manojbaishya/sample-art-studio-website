@@ -106,7 +106,7 @@ function handleFocusOut() {
             :hideToggle="sidebar.props.hide_toggle" :theme="sidebar.props.theme" @focus="handleFocus"
             @focusout="handleFocusOut" tabindex="0">
             <template #header>
-                <a href="/"><img src="@/assets/img/logo/logo-1.png" class="d-block org-logo"></a>
+                <a href="/"><img src="@/assets/img/logo/logo-2.png" class="d-block org-logo"></a>
             </template>
         </SidebarMenu>
         <span class="darkmode-switch buttons-panel-button" @click="darkmode.toggle">
@@ -131,6 +131,14 @@ function handleFocusOut() {
 
 .v-sidebar-menu.vsm_white-theme {
     background-color: #f1eee8;
+}
+
+.v-sidebar-menu {
+    padding-top: 2em;
+}
+
+.vsm--menu {
+    padding-top: 2em !important;
 }
 
 #sidebar-toggle {
