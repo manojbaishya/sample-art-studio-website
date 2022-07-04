@@ -52,7 +52,7 @@ let sidebar = {
             icon: 'fas fa-suitcase'
         },
         {
-            href: '/about',
+            href: '/team',
             title: 'Team',
             icon: 'fas fa-info'
         },
@@ -135,11 +135,18 @@ function handleFocusOut() {
 }
 
 .v-sidebar-menu.vsm_white-theme {
-    background-color: #f1eee8;
+    background-color: var(--bg-color);
+}
+
+.v-sidebar-menu.vsm_white-theme .vsm--link {
+    color: var(--font-color);
 }
 
 .v-sidebar-menu {
     padding-top: 2em;
+    transition: 0.3s transform;
+    z-index: 0;
+
 }
 
 .vsm--menu {
@@ -147,10 +154,6 @@ function handleFocusOut() {
 }
 
 #sidebar-toggle {
-    transition: 0.3s all;
-}
-
-.v-sidebar-menu {
     transition: 0.3s all;
 }
 

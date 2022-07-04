@@ -2,6 +2,7 @@
 import Subpage from "../components/Subpage.vue";
 
 import GridPattern from "../components/GridPattern.vue";
+
 </script>
 
 <template>

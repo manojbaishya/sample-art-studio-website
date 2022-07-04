@@ -13,10 +13,12 @@
         "@fortawesome/fontawesome-free": "^6.1.1",
         "@splidejs/vue-splide": "^0.6.3",
         "chota": "^0.8.0",
+        "eslint": "^8.18.0",
         "pinia": "^2.0.11",
         "vue": "^3.2.34",
+        "vue-final-modal": "^3.4.4",
         "vue-router": "^4.0.12",
-        "vue-sidebar-menu": "^5.2.2"
+        "vue-sidebar-menu": "5.2.3"
     },
     "devDependencies": {
         "@vitejs/plugin-vue": "^2.2.0",
