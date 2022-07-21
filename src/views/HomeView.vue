@@ -7,10 +7,10 @@ import Carousel from "../components/Carousel.vue";
 <template>
     <subpage :header=false :isGeneralPage=false>
 
-        <!-- <iframe src="https://player.vimeo.com/video/637403296?h=d238ab3e9b&loop=1" frameborder="0"
+        <iframe src="https://player.vimeo.com/video/637403296?h=d238ab3e9b&loop=1" frameborder="0"
             allow="autoplay; fullscreen; picture-in-picture">
-        </iframe> -->
-        <Carousel />
+        </iframe>
+        <!-- <Carousel /> -->
 
     </subpage>
 </template>

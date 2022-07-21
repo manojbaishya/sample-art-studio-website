@@ -12,7 +12,7 @@ import { RouterView } from "vue-router";
 
 <style>
 @import "chota/dist/chota.min.css";
-@import "@/styles/chota.custom.css";
-@import "@/styles/fonts.css";
-@import "@/styles/app.css";
+@import "@/styles/chota.custom.scss";
+@import "@/styles/fonts.scss";
+@import "@/styles/app.scss";
 </style>

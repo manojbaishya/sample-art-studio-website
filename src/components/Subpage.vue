@@ -3,7 +3,7 @@ import { ref, computed, watch, onMounted, onUnmounted } from 'vue';
 import Header from "@/components/Header.vue";
 import Content from "@/components/Content.vue";
 
-import { Sidebar } from '@/stores/sidebar.js'
+import { Sidebar } from '@/stores/sidebar.ts'
 
 defineProps({
     title: String,

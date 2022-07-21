@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { ref } from 'vue';
 import Modal from '@/components/Modal.vue';
 
@@ -14,58 +14,73 @@ let slider_options = {
     width: "80%",
 }
 
+
+
 var images = [
     {
         tileId: 'tile-1',
-        backgroundImage: `url("src/assets/img/gallery/img0.jpg")`
+        backgroundImage: `url("src/assets/img/gallery/img0.jpg")`,
+        imgurl: ""
     },
     {
         tileId: 'tile-2',
-        backgroundImage: `url("src/assets/img/gallery/img1.jpg")`
+        backgroundImage: `url("src/assets/img/gallery/img1.jpg")`,
+        imgurl: ""
     },
     {
         tileId: 'tile-3',
-        backgroundImage: `url("src/assets/img/gallery/img22.jpg")`
+        backgroundImage: `url("src/assets/img/gallery/img22.jpg")`,
+        imgurl: ""
     },
     {
         tileId: 'tile-4',
-        backgroundImage: `url("src/assets/img/gallery/img3.jpg")`
+        backgroundImage: `url("src/assets/img/gallery/img3.jpg")`,
+        imgurl: ""
     },
     {
         tileId: 'tile-5',
-        backgroundImage: `url("src/assets/img/gallery/img4.jpg")`
+        backgroundImage: `url("src/assets/img/gallery/img4.jpg")`,
+        imgurl: ""
     },
     {
         tileId: 'tile-6',
-        backgroundImage: `url("src/assets/img/gallery/img23.jpg")`
+        backgroundImage: `url("src/assets/img/gallery/img23.jpg")`,
+        imgurl: ""
     },
     {
         tileId: 'tile-7',
-        backgroundImage: `url("src/assets/img/gallery/img5.jpg")`
+        backgroundImage: `url("src/assets/img/gallery/img5.jpg")`,
+        imgurl: ""
     },
     {
         tileId: 'tile-8',
-        backgroundImage: `url("src/assets/img/gallery/img2.jpg")`
+        backgroundImage: `url("src/assets/img/gallery/img2.jpg")`,
+        imgurl: ""
     },
     {
         tileId: 'tile-9',
-        backgroundImage: `url("src/assets/img/gallery/img1.jpg")`
+        backgroundImage: `url("src/assets/img/gallery/img1.jpg")`,
+        imgurl: ""
     },
     {
         tileId: 'tile-10',
-        backgroundImage: `url("src/assets/img/gallery/img9.jpg")`
+        backgroundImage: `url("src/assets/img/gallery/img9.jpg")`,
+        imgurl: ""
     },
     {
         tileId: 'tile-11',
-        backgroundImage: `url("src/assets/img/gallery/img10.jpg")`
+        backgroundImage: `url("src/assets/img/gallery/img10.jpg")`,
+        imgurl: ""
     },
     {
         tileId: 'tile-12',
-        backgroundImage: `url("src/assets/img/gallery/img11.jpg")`
+        backgroundImage: `url("src/assets/img/gallery/img11.jpg")`,
+        imgurl: ""
     },
     {
         tileId: 'tile-13',
-        backgroundImage: `url("src/assets/img/gallery/img18.jpg")`
+        backgroundImage: `url("src/assets/img/gallery/img18.jpg")`,
+        imgurl: ""
     },
 ];
 

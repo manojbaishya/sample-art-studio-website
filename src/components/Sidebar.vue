@@ -5,7 +5,7 @@ import { DarkMode } from "@/stores/darkmode";
 import 'vue-sidebar-menu/dist/vue-sidebar-menu.css'
 import '@fortawesome/fontawesome-free/css/all.css'
 
-import { Sidebar } from '@/stores/sidebar.js'
+import { Sidebar } from '@/stores/sidebar.ts'
 
 const sidebarState = Sidebar();
 
